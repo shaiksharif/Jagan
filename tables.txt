@@ -1,0 +1,27 @@
+CREATE TABLE `vehicalregistration` (                                
+                       `vehicalid` int(11) NOT NULL AUTO_INCREMENT,                      
+                       `vehicalname` varchar(30) NOT NULL,                               
+                       `vehicaltype` varchar(30) NOT NULL,                               
+                       `adharnumber` varchar(20) NOT NULL,                               
+                       `registrationdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,  
+                       `addressline1` varchar(50) DEFAULT NULL,                          
+                       `addressline2` varchar(50) DEFAULT NULL,                          
+                       `town` varchar(30) DEFAULT NULL,                                  
+                       `city` varchar(30) DEFAULT NULL,                                  
+                       `state` varchar(30) DEFAULT NULL,                                 
+                       `country` varchar(30) DEFAULT NULL,                               
+                       PRIMARY KEY (`vehicalid`)                                         
+                     ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 
+
+CREATE TABLE `addresstable` (                          
+                `id` int(11) NOT NULL AUTO_INCREMENT,                
+                `adharnumber` varchar(20) NOT NULL,                  
+                `addressline1` varchar(50) DEFAULT NULL,             
+                `addressline2` varchar(50) DEFAULT NULL,             
+                `town` varchar(30) DEFAULT NULL,                     
+                `city` varchar(30) DEFAULT NULL,                     
+                `state` varchar(30) DEFAULT NULL,                    
+                `country` varchar(30) DEFAULT NULL,                  
+                PRIMARY KEY (`id`)                                   
+              ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8  
+              
